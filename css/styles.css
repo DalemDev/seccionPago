@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(207, 218, 250);
+}
+h1{
+    margin: 15px 0;
+    font-size: 25px;
+}
+p{
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+span{
+    color: black;
+    font-weight: bold;
+}
+.carta{
+    background-color: white;
+    margin: 50px 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+.carta > p{
+    color: grey;
+    line-height: 1.4;
+    margin: 0 15px;
+    padding: 10px 28px;
+}
+.plan_anual{
+    background-color: rgb(248, 249, 254);
+    margin: 10px 15px;
+    border-radius: 10px;
+    display: flex;
+}
+.plan_anual img{
+    width: 50px;
+    display: inline-block;
+    margin: 10px;
+}
+.plan_anual p{
+    display: inline-block;
+    color: grey;
+    margin: 10px;
+}
+.plan_anual a{
+    text-decoration: underline;
+    color: rgb(56, 42, 225);
+    margin: 20px 0 0 40px;
+    transition: all 1s ease;
+}
+.plan_anual a:hover{
+    text-decoration: none;
+    color: rgb(118, 108, 241);
+}
+.boton_pagar{
+    display: block;
+    width: 300px;
+    height: 50px;
+    background-color: rgb(56, 42, 225);
+    padding: 15px 10px;
+    border-radius: 10px;
+    margin: 10px 18px;
+    box-shadow: 2px 2px 2px gainsboro;
+    cursor: pointer;
+    color: white;
+    transition: all 1s ease;
+}
+.boton_pagar:hover{
+    color: rgb(118, 108, 241);
+}
+.boton_cancelar{
+    display: block;
+    width: 300px;
+    height: 50px;
+    background-color: white;
+    padding: 15px 10px;
+    border-radius: 10px;
+    margin: 10px 18px;
+    color: gray;
+    transition: all 0.5s ease;
+}
+@media screen and (max-width: 1440px){
+    body{
+        background-image: url(../images/pattern-background-desktop.svg);
+    }
+    img{
+        max-width: 350px;
+    }
+    .carta{
+        width: 350px;
+        margin: 50px auto;
+    }
+}
+
+.boton_cancelar:hover{
+    color: black;
+    font-weight: bold;
+}
+.attribution {
+  display: none;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
